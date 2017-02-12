@@ -86,11 +86,11 @@ img {
         width: 78%;
         margin-left: 21%;
     }
-    
+
     .content:nth-of-type(1) {
         margin-top: 310px;
     }
-    
+
     .content hr {
         display: none;
     }
@@ -124,7 +124,7 @@ header ul {
     margin-top: -2%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
 header li {
@@ -150,11 +150,11 @@ header li:nth-child(3) {
         height: 280px;
         transition: height 0.4s ease-out;
     }
-    
+
     header ul {
         display: none;
     }
-    
+
     .smaller {
         height: 80px;
     }
@@ -217,15 +217,15 @@ header li:nth-child(3) {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    
+
     .title h1 {
         font-size: 4.5em;
     }
-    
+
     .title p {
         font-size: 1em;
     }
-    
+
     .smaller .title {
         height: 48px;
         width: 130px;
@@ -286,14 +286,14 @@ section div {
         display: flex;
         justify-content: space-around;
     }
-    
+
     section:nth-of-type(2n+1) {
         flex-direction: row-reverse;
     }
     section div {
         width: 40%;
     }
-    
+
     section div:nth-of-type(2) {
     width: 50%;
 }
@@ -320,7 +320,7 @@ section a:hover {
 section a:active {
     box-shadow: 0px 0px 0px #888;
 }
-    
+
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
@@ -347,10 +347,9 @@ section a:active {
 }
 
 footer {
-    height: 260px;
     margin: 0;
-    padding: 22px 0 0;
     text-align: center;
+    font-size:
     color: #666;
     background: #FFD166; /*url("images/offset-running.jpg") no-repeat right center;*/
     /*background-size: auto 100%;*/
@@ -358,20 +357,30 @@ footer {
     transition: color 0.2s linear 0s;
 }
 
-@media only screen and (max-width: 962px) {
-    footer {
-        height: 160px;
-        padding: 62px 0 0;
-    }
-    
-    footer h1 {
-        font-size: 2em;
-    }
+footer h1 {
+    font-size: 1.4em;
+    margin: 0;
+    padding: 40px 0;
 }
 
-@media only screen and (max-width: 378px) {
+@media only screen and (min-width: 378px) {
+  footer h1 {
+      font-size: 2em;
+      padding: 70px 0;
+  }
+}
+
+@media only screen and (min-width: 660px) {
+  footer h1 {
+      font-size: 2.6em;
+      padding: 70px 0;
+  }
+}
+
+@media only screen and (min-width: 962px) {
     footer h1 {
-        font-size: 1.4em;
+      font-size: 3.4em;
+      padding: 90px 0;
     }
 }
 
