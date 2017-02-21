@@ -32,12 +32,12 @@
 
             <nav>
                 <ul class="vertical">
-                    <li><a href="#personal-training">Personal Training</a></li>
-                    <li><a href="#classes"> Group Classes</a></li>
-                    <li><a href="#youtube">Youtube</a></li>
-                    <li><a href="#instagram">Instagram</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                    <li><a href="about-me.html">About Me</a></li>
+                    <li><a href="index.html#personal-training">Personal Training</a></li>
+                    <li><a href="index.html#classes"> Group Classes</a></li>
+                    <li><a href="index.html#youtube">Youtube</a></li>
+                    <li><a href="index.html#instagram">Instagram</a></li>
+                    <li><a href="index.html#contact">Contact Me</a></li>
+                    <li><a href="#">About Me</a></li>
                 </ul>
             </nav>
 
@@ -72,50 +72,22 @@
                 </div>
             </header>
 
-            <section id="personal-training">
-                <div>
-                    <h2>Personal Training</h2>
-                    <p>Exercise and fresh air - this combination will make you happy and energised!
-                       Functional training helps provide you with flexibility, stability, power, mobility, endurance and strength.
-                       We will use basic functional movements like pushing, pulling, hinging, squatting, rotating, carrying, walking and running to work towards your goals.
-                       I believe personal training works best outside, making you feel energised and easier to kick those stresses away.
-                       I'm here to make sure you achieve your goals safely and with good health, so let's get started!</p>
-                </div>
+            <section>
+              <div>
+                <h2>Here's a little more about me...</h2>
 
-                <div>
-                    <img src="images/personal-training.jpg" alt="Personal Training">
-                </div>
-            </section>
+                <p>I have always been an active person and growing up in Cornwall meant I was always out exploring the countryside.
+                   Nothing beats the fresh air, and that's why you'll mostly find me teaching and training out and about.</p>
 
-            <hr>
+                <p>My passion for fitness instructing began when I studied Sports Science. Around this time I also started teaching aerobics and Zumba, which is a huge passion of mine.
+                   I also share my love for healthy food! You can often find me posting my latest recipes and meals on my Instagram account - not to mention new and exciting fitness videos!</p>
 
-            <section id="classes">
-                <div>
-                    <h2>Group Classes</h2>
-                    <p>Join me in group classes to have fun, move and be a healthy you.
-                       My classes are high impact, certain to make a difference but they're never without a good beat - certain to keep you motivated as a group!</p>
-                    <p>Zumba, Step and Tone, High Intensity Interval Training (HIIT), Body Sculpt, Legs Bums and Tums, Da Vinci Body Board, Aqua Fit, Fitness Pilates and Stretch &amp; Relax</p>
-                </div>
-
-                <div>
-                    <img src="images/group-classes.jpg" alt="Group Fitness">
-                </div>
-            </section>
-
-            <hr>
-
-            <section id="youtube">
-                <div class="text-center">
-                    <h2>come on over to my YouTube channel</h2>
-                    <a href="https://www.youtube.com/channel/UCf5QLQjm9158424Zk1R6wWQ">Watch On YouTube</a>
-                </div>
-
-
-                <div>
-                    <div class="videoWrapper">
-                        <iframe id="ytplayer" type="text/html" width="720" height="405" src="https://www.youtube.com/embed/7xwC_d-Qn54?controls=0&rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
+                <p>Ultimately, I just love to help people feel great with their mind and body. No matter your fitness goal, we can work together to keep you focused while also finding a routine you enjoy.</p>
+              </div>
+              
+              <div>
+                <img src="images/rebecca-uterhark-personal-trainer-about.jpg" alt="Rebecca Uterhark Personal Trainer About">
+              </div>
             </section>
 
             <hr>
@@ -149,7 +121,7 @@
                         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                         if (target.length) {
                             $('html, body').animate({
-                                scrollTop: target.offset().top -100
+                                scrollTop: target.offset().top -80
                             }, 1000);
                             return false;
                         }
