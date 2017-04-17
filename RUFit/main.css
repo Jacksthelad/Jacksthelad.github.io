@@ -186,6 +186,7 @@ section .button:active {
   color: #e6e6e6
 }
 
+
 /* YouTube */
 .videoWrapper {
 	position: relative;
@@ -202,6 +203,7 @@ section .button:active {
 	height: 100%;
 }
 
+
 /* Instagram */
 #instagram {
   padding: 0;
@@ -216,6 +218,7 @@ section .button:active {
 #instagram iframe {
   margin: 0;
 }
+
 
 /*Footer */
 footer {
