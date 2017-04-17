@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>RUFit</title>
@@ -14,9 +16,7 @@
         <link rel="stylesheet" href="main.css">
         <!-- Javascript -->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-        <script>
-
-        </script>
+        <script src="mainscript.js"></script>
     </head>
 
     <body>
@@ -84,7 +84,7 @@
 
                 <p>Ultimately, I just love to help people feel great with their mind and body. No matter your fitness goal, we can work together to keep you focused while also finding a routine you enjoy.</p>
               </div>
-              
+
               <div>
                 <img src="images/rebecca-uterhark-personal-trainer-about.jpg" alt="Rebecca Uterhark Personal Trainer About">
               </div>
@@ -94,7 +94,7 @@
 
             <section id="instagram">
                     <script src="https://snapwidget.com/js/snapwidget.js"></script>
-                    <iframe src="https://snapwidget.com/embed/code/207028" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+                    <iframe src="https://snapwidget.com/embed/code/237131" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
             </section>
 
             <footer id="contact">
@@ -103,32 +103,6 @@
                 </div>
             </footer>
         </div>
-
-        <script>
-            $(document).ready(function() {
-                $(window).scroll(function() {
-                    var scroll = $(window).scrollTop();
-                    if (scroll >= 80) {
-                        $("header").addClass('smaller');
-                    } else {
-                        $("header").removeClass("smaller");
-                    }
-                });
-
-                $('a[href*="#"]:not([href="#"])').click(function() {
-                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                        if (target.length) {
-                            $('html, body').animate({
-                                scrollTop: target.offset().top -80
-                            }, 1000);
-                            return false;
-                        }
-                    }
-                });
-            });
-        </script>
 
     </body>
 </html>
