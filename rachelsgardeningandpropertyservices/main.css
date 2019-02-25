@@ -35,7 +35,7 @@ header .secondary {
 }
 
 header h2 {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 header .secondary .text {
@@ -59,15 +59,11 @@ header .image img {
     font-size: 2.6em;
   }
 
-  header h2 {
-    font-size: 1.8em;
-  }
-
-  header > div .text {
+  header .secondary .text {
     width: 44%;
   }
 
-  header > div .image {
+  header .secondary .image {
     width: 34%;
   }
 }
@@ -78,7 +74,11 @@ header .image img {
   }
 
   header h2 {
-    font-size: 1.3em;
+    font-size: 1.4em;
+  }
+
+  header .secondary .image {
+    width: 40%;
   }
 }
 
@@ -93,8 +93,14 @@ header .image img {
 }
 
 @media (max-width: 540px) {
+
+  header .primary img {
+    margin-bottom: 0;
+  }
+
   header h1 {
     font-size: 1.4em;
+    margin-bottom: 0;
   }
 
   header h2 {
@@ -102,35 +108,85 @@ header .image img {
   }
 
   header > div {
-    width: 84%;
+    width: 100%;
   }
 
-  header > div .text {
+  header .secondary {
+    width: 80%;
+  }
+
+  header .secondary .text {
     width: 52%;
   }
 
-  header > div .image {
+  header .secondary .image {
     width: 40%;
   }
 }
 
 
 .services {
+  display: flex;
+  flex-wrap: wrap;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  margin: 40px 0;
-  padding: 40px 10%;
+  width: 66%;
+  margin: 40px auto;
+}
+
+@media (max-width: 880px) {
+  .services {
+    grid-gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 88%;
+    padding: 40px 4%;
+  }
+}
+
+@media (max-width: 680px) {
+  .services {
+    grid-gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr) 1.2fr;
+    padding: 40px 4%;
+  }
+}
+
+@media (max-width: 500px) {
+  .services {
+    grid-gap: 16px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding: 40px 4%;
+  }
 }
 
 .services > div {
+  flex: 1 1 28%;
+  margin: 0 1% 16px 1%;
   padding: 0 8px 0 8px;
   background: #A1D1B4;
   text-align: center;
 }
 
-.services .a {
+@supports(display: grid) {
+  .services > div {
+    margin: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .services > div {
+    background: none;
+    text-align: left;
+  }
+
+  .services div:nth-of-type(even) {
+    display: none;
+  }
 }
 
 .services .b {
@@ -138,15 +194,9 @@ header .image img {
   background-size: cover;
 }
 
-.services .c {
-}
-
 .services .d {
   background: #A1D1B4 url("images/painting_decorating_house_maintenance.jpg") no-repeat center;
   background-size: cover;
-}
-
-.services .e {
 }
 
 .services .f {
@@ -154,86 +204,76 @@ header .image img {
   background-size: cover;
 }
 
-.services .g {
-}
-
 .services .h {
   background: #A1D1B4 url("images/fencing.jpg") no-repeat center;
   background-size: cover;
 }
 
-.services .i {
+.services .grid_head {
+  background: none;
 }
 
+.services .grid_head h2 {
+  padding: 4px;
+  border-radius: 2px;
+  background-color: #A1D1B4;
+  color: #FFF;
+}
 
-.social_media {
+@media (max-width: 680px) {
+  .services .grid_head {
+    display: flex;
+    align-items: flex-end;
+    min-height: 220px;
+    background-size: cover;
+  }
+
+  .services .a .grid_head {
+    background: #A1D1B4 url("images/lawn_mowing.jpg") no-repeat center;
+  }
+
+  .services .c .grid_head {
+    background: #A1D1B4 url("images/general_gardening.jpg") no-repeat center;
+  }
+
+  .services .e .grid_head {
+    background: #A1D1B4 url("images/fencing.jpg") no-repeat center;
+  }
+
+  .services .g .grid_head {
+    background: #A1D1B4 url("images/painting_decorating_house_maintenance.jpg") no-repeat center;
+  }
+
+  .services .i .grid_head {
+    background: #A1D1B4 url("images/garden_clearence.jpg") no-repeat center;
+  }
+}
+
+.contact {
   display: flex;
-  justify-content: space-around;
-  margin: 40px 0 60px;
-  padding: 40px 14%;
-  background: #A1D1B4;
+  width: 66%;
+  margin: 0 auto;
 }
 
-.social_media > div {
-  flex: 1;
-  text-align: center;
-  flex: 1;
-  text-align: center;
+.contact div {
+  flex: 1 1 50%;
+}
+
+.contact div img {
+  width: 100%;
+}
+
+.contact .details {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
-.contact {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-  padding: 20px 10%;
-  color: white;
-  background: #A1D1B4;
-  line-height: 1.4;
-}
-
-.contact .email_telephone {
+.contact .details div {
   display: flex;
   flex-direction: column;
-  margin-top: 16px;
+  align-items: flex-start;
 }
-
-.contact .email_telephone a {
-  color: #FFF;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.contact .email_telephone a:hover {
-  color: #7FC099;
-}
-
-.contact .email_telephone a:active {
-  color: #90C9A6;
-}
-
-.social {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 16px;
-}
-
-.social a {
-  color: #FFF;
-  transition: color 0.2s;
-}
-
-.social a:hover {
-  color: #7FC099;
-}
-
-.social a:active {
-  color: #90C9A6;
-}
-
 
 footer {
   padding: 20px 0;
